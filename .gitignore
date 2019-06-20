@@ -1,0 +1,7 @@
+node_modules/
+app/bower_components
+.idea/
+config.json
+package-lock.json
+.gulp
+.DS_Store
