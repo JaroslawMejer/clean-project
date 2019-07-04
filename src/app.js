@@ -1,5 +1,5 @@
 import './main.scss';
 
-var func = num => num * 2;
-console.log(func(5));
+import './js/scripts.js'; // Basic Scripts
+import './js/owl.js'; // Owl Scripts
 
