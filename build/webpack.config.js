@@ -36,7 +36,8 @@ module.exports = (env) => {
         },
         entry: './src/app.js',
         output: {
-            path: path.resolve(__dirname, '../dist')
+            path: path.resolve(__dirname, '../dist'),
+            filename: env !== 'production' ? 'js/app.js': 'js/app.min.js'
         },
         devtool: env !== 'production' ? "source-map" : '',
         devServer: {
@@ -132,7 +133,7 @@ module.exports = (env) => {
             new CleanWebpackPlugin(),
             new HtmlWebpackPugPlugin(),
             new MiniCssExtractPlugin({
-                filename: "[name]-styles.css",
+                filename: env !== 'production' ? "css/[name]-styles.css" : "css/[name]-styles.min.css",
                 chunkFilename: "[id].css"
             }),
         ]
