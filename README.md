@@ -8,6 +8,7 @@ Clean setup to start a new project
 * Pug
 * Sass
 * Babel 
+* Normalize.css
 * <i>... more to come </i>
 
 ### Run
