@@ -37,7 +37,7 @@ module.exports = (env) => {
         entry: './src/app.js',
         output: {
             path: path.resolve(__dirname, '../dist'),
-            filename: env !== 'production' ? 'js/app.js': 'js/app.min.js'
+            filename: env !== 'production' ? 'js/app.js': 'js/app.min.js',
         },
         devtool: env !== 'production' ? "source-map" : '',
         devServer: {
@@ -99,7 +99,13 @@ module.exports = (env) => {
                 {
                     test: /\.(scss|css)$/,
                     use: [
-                        MiniCssExtractPlugin.loader,
+                        {
+                            loader: MiniCssExtractPlugin.loader,
+                            options: {
+                                publicPath: '../'
+                            }
+                        },
+
                         {
                             loader: "css-loader",
                             options: {

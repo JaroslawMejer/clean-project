@@ -1,6 +1,8 @@
-import 'normalize.css'; // Normalize
+import './scss/main.scss'; // Main style files
 
-import './main.scss'; // Main style files
+// import 'normalize.css'; // Normalize
+
+
 
 
 import './js/scripts.js'; // Basic Scripts
