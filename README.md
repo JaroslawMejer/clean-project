@@ -9,6 +9,7 @@ Clean setup to start a new project
 * Sass
 * Babel 
 * Normalize.css
+* Foundation for Sites
 * <i>... more to come </i>
 
 ### Run

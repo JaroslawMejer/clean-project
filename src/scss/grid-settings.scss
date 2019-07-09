@@ -1,0 +1,32 @@
+$breakpoints: (
+        small: 0,
+        medium: 768px,
+        large: 1024px,
+        xlarge: 1200px,
+        xxlarge: 1460px,
+        wide: 1800px,
+        for-smartphone-up: 360px,
+        for-tablet-portrait-up: 600px,
+        for-tablet-landscape-up: 900px,
+        for-desktop-up: 1200px,
+        for-big-desktop-up: 1920px
+);
+
+$print-breakpoint: large;
+$breakpoint-classes: (small medium large xlarge xxlarge wide for-smartphone-up for-tablet-portrait-up for-tablet-landscape-up for-desktop-up for-big-desktop-up);
+
+// Grid settings
+$grid-columns: 12;
+$global-width: 1200px;
+$grid-container: $global-width;
+$debug: false;
+$grid-margin-gutters: (
+        small: 30px,
+        medium: 30px
+);
+
+$grid-padding-gutters: $grid-margin-gutters;
+$grid-container-padding: (
+        small: 30px
+);
+
